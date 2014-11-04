@@ -1,0 +1,25 @@
+
+private
+Git global setup
+
+git config --global user.name "Huseyin Bilgin"
+git config --global user.email "huseyin.bilgin@eig.ch"
+
+Create a new repository
+
+mkdir freetorrent
+cd freetorrent
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin git@git.hepia.ovh:hepia_torrent_team/freetorrent.git
+git push -u origin master
+
+Push an existing Git repository
+
+cd existing_git_repo
+git remote add origin git@git.hepia.ovh:hepia_torrent_team/freetorrent.git
+git push -u origin master
+
+
